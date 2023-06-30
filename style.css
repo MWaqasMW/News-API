@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    body {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Adjust font size for even smaller screens */
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.8rem;
+    }
+  }
+
+.my-nav{
+    padding: 0.5rem;
+ 
+}
+
+ul li {
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.my-silder{
+  height: 90vh;
+  padding-bottom: 1rem;
+}
+
+
+
+.news-containor{
+  text-align: center;
+  padding: 2rem;
+}
+.containor-1{
+  display: flex;
+  flex-wrap: wrap;
+padding-top: 4rem;
+}
+
+.left-container{
+  border-right: 3px solid #000;
+    padding: 2rem;
+width: 380px;
+
+
+}
+
+.card-text{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.space
+{
+  padding: 0.5rem;
+}
+
+.left-container  .flex{
+  
+    display: flex;
+    justify-content:space-around;
+}
+.list{
+  list-style: none;
+}
+
+
+
+
+  .mid-containor{
+    display: flex;
+    justify-content: center;
+    padding: 0rem 1rem;
+    width: 40%;
+    border-right: 3px solid #000;
+  }
+
+  .right-containor{
+    padding: 1rem;
+    width: 30%;
+    
+  }
+
+  @media only screen and (max-width: 880px) {
+
+    .containor-1{
+    
+      flex-wrap: wrap;
+      border-left: none;
+      flex-wrap: wrap;
+    }
+    .mid-containor{
+      
+    order: -1;
+    width: 100%;
+    display: block;
+    }
+.right-containor{
+  width: 48%;
+
+}
+
+  }
+  @media only screen and (max-width: 732px){
+  
+    .left-container{
+      width: 100%;
+    }
+    .right-containor{
+      width: 100%;
+    }
+    .left-container  .flex{
+      width: 100%;
+      display: flex;
+      justify-content:center;
+  }
+
+ 
+  }
